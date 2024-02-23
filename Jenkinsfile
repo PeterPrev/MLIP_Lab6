@@ -22,7 +22,7 @@ pipeline {
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
 
                 # Activate virtual environment
-                source mlip/Scripts/activate
+                source mlip/bin/activate
 
                 # Install dependencies
                 pip install pytest
