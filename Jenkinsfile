@@ -23,10 +23,13 @@ pipeline {
 
                 # Activate virtual environment
                 # sudo ./mlip
-                sudo /home/team14/miniconda3/bin/conda init
+                /home/team14/miniconda3/bin/conda init
+                /home/team14/miniconda3/bin/conda activate base 
+                pip install pytest
 
                 # sudo ./pytest
-                sudo /home/team14/miniconda3/bin/conda run -n base pytest
+
+                /home/team14/miniconda3/bin/conda run -n base pytest
 
                 echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
