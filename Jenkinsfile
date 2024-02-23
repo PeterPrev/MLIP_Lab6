@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh '''#!/bin/bash
+                '''sh #!/bin/bash
                 echo 'In C or Java, we can compile our program in this step'
                 echo 'In Python, we can build our package here or skip this step'
                 '''
@@ -21,8 +21,20 @@ pipeline {
                 # TODO Complete the command to run pytest
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
 
-                echo 'pytest not runned'
-                exit 1 #comment this line after implementing Jenkinsfile
+                # Activate virtual environment
+                source mlip/Scripts/activate
+
+                # Install dependencies
+                pip install pytest
+                pip install pandas
+                pip install numpy
+                pip install scikit-learn
+
+                # Run pytest
+                pytest
+
+                # echo 'pytest not runned'
+                # exit 1 #comment this line after implementing Jenkinsfile
                 '''
 
             }
