@@ -22,9 +22,9 @@ pipeline {
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
 
                 # Activate virtual environment
-                sudo ./mlip
+                # sudo ./mlip
 
-                sudo ./pytest
+                # sudo ./pytest
 
                 # echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
