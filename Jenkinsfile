@@ -23,7 +23,7 @@ pipeline {
 
                 # Activate virtual environment
                 # sudo ./mlip
-                sudo /home/team14/miniconda3/bin/cond init
+                sudo /home/team14/miniconda3/bin/conda init
 
                 # sudo ./pytest
                 sudo /home/team14/miniconda3/bin/conda run -n base pytest
