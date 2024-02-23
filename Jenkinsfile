@@ -24,15 +24,6 @@ pipeline {
                 # Activate virtual environment
                 sudo mlip
 
-                # Install dependencies
-                # mlip/Scripts/pip.exe install pytest
-                # mlip/Scripts/pip.exe install pandas
-                # mlip/Scripts/pip.exe install numpy
-                # mlip/Scripts/pip.exe install scikit-learn
-
-                # Run pytest
-                # mlip/Scripts/pytest.exe
-
                 sudo pytest
 
                 # echo 'pytest not runned'

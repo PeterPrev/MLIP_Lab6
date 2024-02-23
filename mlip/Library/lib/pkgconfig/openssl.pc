@@ -1,0 +1,9 @@
+prefix=C:/Users/prpre/OneDrive/Documents/Carnegie Mellon/2023-2024 Spring/MLIP/MLIP_Lab6/mlip/Library 
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Requires: libssl libcrypto
+Version: 3.2.1 
