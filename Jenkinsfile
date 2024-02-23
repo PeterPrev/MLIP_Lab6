@@ -22,16 +22,16 @@ pipeline {
                 # sudo /PATH/TO/CONDA run -n <Envinronment Name> <Command you want to run>
 
                 # Activate virtual environment
-                source mlip/bin/activate
+                source mlip/Scripts/activate
 
                 # Install dependencies
-                pip install pytest
-                pip install pandas
-                pip install numpy
-                pip install scikit-learn
+                mlip/Scripts/pip install pytest
+                mlip/Scripts/pip install pandas
+                mlip/Scripts/pip install numpy
+                mlip/Scripts/pip install scikit-learn
 
                 # Run pytest
-                pytest
+                mlip/Scripts/pytest
 
                 # echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
