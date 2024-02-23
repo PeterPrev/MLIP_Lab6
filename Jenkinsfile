@@ -25,13 +25,13 @@ pipeline {
                 source mlip/Scripts/activate
 
                 # Install dependencies
-                mlip/Scripts/pip install pytest
-                mlip/Scripts/pip install pandas
-                mlip/Scripts/pip install numpy
-                mlip/Scripts/pip install scikit-learn
+                mlip/Scripts/pip.exe install pytest
+                mlip/Scripts/pip.exe install pandas
+                mlip/Scripts/pip.exe install numpy
+                mlip/Scripts/pip.exe install scikit-learn
 
                 # Run pytest
-                mlip/Scripts/pytest
+                mlip/Scripts/pytest.exe
 
                 # echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
